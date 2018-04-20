@@ -11,7 +11,7 @@
     "build:flow":
       "./node_modules/flow-copy-source/bin/flow-copy-source.js src lib",
     "prepack": "yarn run build",
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "yarn run build:babel && ./node_modules/mocha/bin/mocha"
   },
   "files": ["lib"],
   "devDependencies": {
